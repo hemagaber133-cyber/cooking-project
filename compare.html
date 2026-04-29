@@ -1,14 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href=""/>
-    <link rel="stylesheet" href=""/>
-    <script src="main.js"></script>
-</head>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+<title>Comparison</title>
+<link rel="stylesheet" href="themegirls.css" >
+
+    </head>
 <body>
-    
+
+<nav class="navbar">
+
+<ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li> <a href="compare.html" >Comparison</a></li>
+    <li><a href="benefits.html">Benefits</a></li>
+    <li><a href="recipe.html">Recipes</a></li>
+    <li><a href="video.html">Videos</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="login.html">Login</a></li>
+
+
+</ul>
+
+</nav>
+
+<div class="description">
+   <h1>Compare Your Favorite Meals!</h1>
+<p>Find out which food is healthier and fits your lifestyle.</p> 
+</div>
+
+<div class="selection">
+<form>
+        <select id="food1" name="food1">
+    <optgroup label="Main Dishes">
+        <option value="pizza" selected>Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="pasta">Pasta</option>
+        <option value="sushi">Sushi</option>
+        <option value="spaghetti">Spaghetti</option>
+        <option value="steak">Steak</option>
+        <option value="salad">Salad</option>
+        <option value="fries">Fries</option>
+        <option value="friedchicken">Fried Chicken</option>
+        <option value="salamon">Salamon</option>
+
+    </optgroup>
+
+    <optgroup label="Desserts">
+        <option value="cake">Cake</option>
+        <option value="icecream">Ice Cream</option>
+        <option value="donut">Donut</option>
+        <option value="cremebrulee">Creme Burlee</option>
+        <option value="chocolatecake">Chocolate Cake</option>
+        <option value="cookies">Cookies</option>
+        <option value="cupcake">Cup Cake</option>
+        <option value="waffle">Waffle</option>
+        <option value="cinnamon">Cinnamon</option>
+        <option value="pancakes">Pancakes</option>
+    </optgroup>
+
+</select>
+
+ <select id="food2" name="food2">
+    <optgroup label="Main Dishes">
+        <option value="pizza" selected>Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="pasta">Pasta</option>
+        <option value="sushi">Sushi</option>
+        <option value="spaghetti" selected>Spaghetti</option>
+        <option value="steak">Steak</option>
+        <option value="salad">Salad</option>
+        <option value="fries">Fries</option>
+        <option value="friedchicken">Fried Chicken</option>
+        <option value="salamon">Salamon</option>
+
+    </optgroup>
+
+    <optgroup label="Desserts">
+        <option value="cake">Cake</option>
+        <option value="icecream">Ice Cream</option>
+        <option value="donut">Donut</option>
+        <option value="cremebrulee">Creme Burlee</option>
+        <option value="chocolatecake">Chocolate Cake</option>
+        <option value="cookies">Cookies</option>
+        <option value="cupcake">Cup Cake</option>
+        <option value="waffle">Waffle</option>
+        <option value="cinnamon">Cinnamon</option>
+        <option value="pancakes">Pancakes</option>
+    </optgroup>
+
+</select>
+
+<button type="submit">Compare</button>
+
+<div id="foodcomparisonimages" style="display:none;">
+
+    <div id="firstfood">
+        <img id="food1Img" width="120">
+        <p id="food1Name"></p>
+    </div>
+
+    <div id="vs">VS</div>
+
+    <div id="secondfood">
+        <img id="food2Img" width="120">
+        <p id="food2Name"></p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</form>
+</div>
+
+<div id="table-result" style="display: none;">
+<table>
+
+
+<thead>
+  <tr> <th>Nutrition</th> <th id="foodName1">Food 1</th>  <th id="foodName2">Food 2</th> </tr>
+</thead>
+
+<tbody>
+
+<tr>  <td>Calories</td>  <td id="cal1"></td>  <td id="cal2"></td></tr>
+
+<tr>  <td>Protein</td>  <td id="protein1"></td>  <td id="protein2"></td></tr>
+
+<tr>  <td>Fat</td>  <td id="fat1"></td>  <td id="fat2"></td></tr>
+
+<tr>  <td>Carbs</td>  <td id="carbs1"></td>  <td id="carbs2"></td></tr>
+
+<tr>  <td>Cholesterol</td>  <td id="chol1"></td>  <td id="chol2"></td></tr>
+
+</tbody>
+
+
+</table>
+</div>
+
+
+
+
+<script src="main.js"></script>
 </body>
+
+
 </html>
