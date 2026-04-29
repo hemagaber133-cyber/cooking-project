@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:rgb(2, 230, 32);
+    --nav-color:rgb(25, 25, 35)
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    min-height:10%;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+}
+.theme-btn{
+    position: absolute;
+    padding: 8px 15px;
+    right: 45%;
+    width: 100px;
+    height: 33px;
+    top: 1em;
+    border-radius: 5px;
+    background-color: var(--nav-color);
+    cursor: pointer;
+    color: #eee;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+.theme-btn:hover,.menu-btn:hover{
+   
+    transform: scale(1.05);
+}
+.logo {
+    font-family: fantasy;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.COOK{
+    color: #eee;
+}
+.ING{
+    color: var(--main-color);
+}
+.pages{
+    order: 1;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.menu-btn{
+    background-color: var(--nav-color);
+    cursor: pointer;
+    width: 100px;
+    margin:15px;
+    position: relative;
+    justify-self: center;
+}
+.hide{
+    display:none;  
+}
+.nav-icons{
+margin-right: 3px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    border-top:#eee 1px solid ;   
+    border-left:#eee 1px solid ;   
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center ;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+ul li a:hover{
+    background-color: var(--main-color);
+}
+.active{
+    background-color:var(--main-color);
+}
+
