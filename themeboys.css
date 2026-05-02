@@ -1,3 +1,4 @@
+/* ======== Hema Edit -------- */
 *{
     margin: 0%;
     padding: 0%;
@@ -5,11 +6,15 @@
 }
 :root{
     --main-color:rgb(2, 230, 32);
-    --nav-color:rgb(25, 25, 35)
+    --nav-color:rgb(25, 25, 35);
 }
 body{
     width: 100%;
     height: 100vh;
+}
+.Body{
+    
+    background-color: var(--nav-color);
 }
 nav{
     background-color: var(--nav-color);
@@ -98,8 +103,89 @@ ul li a:hover{
 .active{
     background-color:var(--main-color);
 }
+.search-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:var(--main-color);
+    margin-top: 0px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+     box-shadow: 5px 8px 10px var(--nav-color);
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.text{
+    height: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: large;
+}
+.search-bar button {
+    background-color: var(--nav-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.Header{
+    background-color: var(--main-color);
+    text-align: center;
+    width: 60%;
+    margin: 20px 20%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px var(--nav-color);
+    text-shadow: 2px 4px 8px var(--nav-color);
+    color: white;
+}
+.txt-header{
+    font-size: 20px;
+    
+}
+.fig{
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px var(--nav-color);
+    margin: 20px auto;
+    max-width: 800px;
+}
+.fig img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    
+}
+.fig figcaption{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 4px 8px var(--nav-color);
+}
+map{
+    cursor: pointer;
+    
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: auto;
+    font-size: 16px;
+}
+
 /*Ziad mahmoud Edit*/
-body{
+.body{
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url('photo.jpg');
     background-size:cover;
     background-position:center;
@@ -180,7 +266,7 @@ form{
     font-size:18px;
     background-color:rgba(252, 248, 246, 0.541)
 }
-button{
+.button{
     padding: 5px 15px;
     background-color:#37576b;
     font-size:17px;
@@ -190,7 +276,3 @@ button{
     background-color:rgba(70, 61, 61,0.5);
     margin-top:10px;
 }
-
-
-
-
