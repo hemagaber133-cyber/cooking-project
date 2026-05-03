@@ -350,8 +350,9 @@ footer {
     background-color:rgba(252, 248, 246, 0.541)
 }
 .b1{
+    color:white;
     padding: 5px 15px;
-    background-color:#37576b;
+    background-color:rgb(25, 25, 35);
     font-size:17px;
 }
 .gogo{
