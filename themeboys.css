@@ -222,12 +222,57 @@ footer {
     border-radius: 20px;
 }
 .benefit-item p{
-   margin-top: 10px;
+    margin-top: 10px;
     font-size: 1.1rem;
     font-weight: bold;
     color: white;
     text-shadow: 2px 4px 8px var(--nav-color); 
 }
+/* ------------- Hema Edit For Benefits ----------*/
+.head .title{
+     background-color: var(--main-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px var(--nav-color);
+    text-shadow: 2px 4px 8px var(--nav-color);
+    color: white;
+}
+.recipe-content{
+     text-align: center;
+    background-color: var(--main-color);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px var(--nav-color);
+    margin: 20px auto;
+    max-width: 800px;
+}
+.recipe-content .img{
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    border-radius: 20px;
+}
+.recipe-content p,.recipe-titel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 4px 8px var(--nav-color);
+}
+.recipe-content{
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 2px 4px 8px var(--nav-color);
+
+}
+.Steps{
+    list-style: none;
+} 
+
 /*Ziad mahmoud Edit*/
 .m1{
     background-color:rgba(25,25,35);
