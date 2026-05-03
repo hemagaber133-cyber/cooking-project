@@ -185,14 +185,8 @@ footer {
 }
 
 /*Ziad mahmoud Edit*/
-.body{
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url('photo.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    height:100nv;
-    margin:0;
+body{
+    background-color:rgba(25,25,35);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +194,7 @@ footer {
 }
 .gaga{
     text-align: center;
-    background-color:rgba(162, 173, 173, 0.7);
+    background-color:rgba(2,230,32);
     margin-top:80px;
     padding:20px 100px;
     border-radius:10px;
@@ -223,8 +217,8 @@ footer {
     display:inline-block;
     font-size:20px;
 }
-form{
-    background-color:rgba(162, 173, 173, 0.7);
+#login-form{
+    background-color:rgba(2,230,32);
     margin-top:40px;
     padding:15px 40px;
     border-radius:10px;
@@ -266,10 +260,17 @@ form{
     font-size:18px;
     background-color:rgba(252, 248, 246, 0.541)
 }
-.button{
+button{
     padding: 5px 15px;
     background-color:#37576b;
     font-size:17px;
+}
+.gogo{
+    padding:10px;
+    border-radius: 20px;
+    font-size:18px;
+    background-color:rgba(2,230,32);
+    margin-top:10px;
 }
 .gogo{
     font-size:18px;
