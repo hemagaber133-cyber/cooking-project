@@ -2,11 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Recipes | COOKING</title>
-    <link rel="stylesheet" href="themegirls.css" id="theme-link">
+    <title>Restaurant Recipes</title>
+    <link rel="stylesheet" href="themegirls.css">
+
+    <style>
+
+        header.head{
+            min-height: 50vh;
+    background-image: url(pngtree-top-4k-hd-food-wallpapers-for-social-media-picture-image_16320578.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    padding:  60px 20px ;
+    text-align: center;
+    color: #990000;
+}
+ .sub{
+    font-family: playfair dispiay ,serif;
+    color: #990000;
+    text-align: center;
+    margin-top: 60px;
+}
+.container{
+    max-width: 100%;
+    margin: 20x auto;
+    background: #fff8e7;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0,0.5);
+    flex: 1;
+    display: block;
+}
+
+ .img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 3px solid #990000;
+    transition:transform 0.3s ease;
+    max-width: 100%;
+    width: 80%;
+}
+.img:hover{
+    transform: scale(1.25);
+}
+ul,ol{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 20px;
+}
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%
+    text-align:center;
+    border:solid;
+}
+table td{
+    padding: 10px;
+    border-bottom: 1px solid #d2b48c;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient( to right,transparent,#800000,transparent);
+    margin: 40px 0;
+}
+.description{
+    font-family: 'playfair display', serif;
+    font-size: 25px;
+    font-style: italic;
+    color:#990000 ;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    
+}
+.time{
+    font-family: 'liber Baskerville',serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #990000;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+}
+.recipe-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #f5f5dc;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.recipe-content{
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    color: #990000;
+}
+.img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;}
+
+    h1{text-align: center;
+        margin-bottom: 50px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+    footer{
+        width: 100%;
+    }
+
+
+    </style>
 </head>
 <body>
-     <nav>
+    <header class="head">
+    <nav>
         <div class="logo">
             <span class="COOK">COOK</span><span class="ING">ING</span>
         </div>
@@ -16,9 +148,9 @@
                         viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                         <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                     </svg></button>
-                <div class="links hide">
+                <div class="links">
                     <li>
-                        <a  href="index.html">
+                        <a class="active" href="index.html">
                             <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" height="24px"
                                 viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                                 <path
@@ -48,7 +180,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="recipe.html">
+                        <a href="recipe.html">
                             <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" height="24px"
                                 viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                                 <path
@@ -90,21 +222,20 @@
                 </div>
             </ul>
         </div>
-        <button class="theme-btn" onclick="ChangeTheme()">Theme</button>
+           <button class="theme-btn" onclick="ChangeTheme()">Theme</button>
     </nav>
-    <header>
     <h1 class="title"><i>Our special Recipes:</i></h1>
-  
     </header>
     </body>
     <div class="container">
-        <div class="card"> 
-            <div class="card-content">
-                <h2 class="123"><i> Pizza</i></h2>
+        <div class="recipe-card"> 
+            <div class="recipe-content">
+                <h2 class="recipe-titel"><i> Pizza</i></h2>  
+              <img class="img" src="download.jpg">
                 <p class="description">Delicious cheesy pizza with fresh toppings</p>
                 <p class="time">30 mins</p>
                 <div class="nutrition-table">
-                    <table>
+                    <table class="nutrition-table">
                     <thead>
                         <tr>
                             <th colspan="2">Nutrition fact for 100g</th>
@@ -129,8 +260,6 @@
                         </tr>
                     </tbody>
                     </table>
-
-                <img class="img" src="download.jpg">
                 <h2>Pizza Recipe</h2>
                 <h3>Ingredients:</h3>
                 <ul>
@@ -154,13 +283,14 @@
         
             </div>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <h2 class="123"><i>cordon Bleu</i></h2>
+        <div class="recipe-card">
+            <div class="recipe-content">
+                <h2 class="recipe-titel"><i>cordon Bleu</i></h2>
+                   <img class="img" src="download (5).jpg">
                 <p class="description">Delicious fried cordon Bleu</p>
                 <p class="time">35 mins</p>
   <div class="nutrition-table">
-                <table>
+                <table class="nutrition-table">
                     <thead>
                         <th colspan="2">Nutrition fact for 100g</th>
                         <tr>
@@ -182,7 +312,6 @@
                     </thead>
                 </table>
             </div>
-            <img class="img" src="download (5).jpg">
             <h2>cordon Bleu recipe</h2>
             <h3>Ingrediants:</h3>
             <ul>
@@ -201,13 +330,14 @@
             <hr>
             </div>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <h2 class="123"><i>pasta</i></h2>
+        <div class=" recipe-card">
+            <div class="recipe-content"> 
+                <h2 class="recipe-titel"><i>pasta</i></h2>
+                   <img class="img" src="download (2).jpg">
                 <p class="description">creamy pasta</p>
                 <p class="time">25 mins</p>
                     <div class="nutrition-table">
-                <table>
+                <table class="nutrition-table">
                     <thead>
                         <th colspan="2">Nutrition fact for 100g</th>
                         <tr>
@@ -229,7 +359,6 @@
                     </thead>
                 </table>
             </div>
-                <img class="img" src="download (2).jpg">
                 <h2>pasta recipe</h2>
                             <h3>Ingredients:</h3>
             <ul>
@@ -247,13 +376,14 @@
             <hr>
             </div>
         </div>
-    <div class="card">
-        <div class="card-content">
-            <h2 class="123"><i>Burger</i></h2>
+    <div class=" recipe-card">
+        <div class="recipe-content">
+            <h2 class="recipe-titel"><i>Burger</i></h2>
+             <img class="img" src="download (3).jpg">
             <p class="description">juicy beef burger with crispy fries</p>
             <p class="time">20 mins</p>
               <div class="nutrition-table">
-                <table>
+                <table class="nutrition-table">
                     <thead>
                         <th colspan="2">Nutrition fact for 100g</th>
                         <tr>
@@ -275,7 +405,6 @@
                     </thead>
                 </table>
             </div>
-            <img class="img" src="download (3).jpg">
             <h2>Burger recipe</h2>
             <h3>Ingrediants:</h3>
             <ul>
@@ -294,13 +423,14 @@
     
         </div>
     </div>
-    <div class="card">
-        <div class ="card-content">
-            <h2><i>Chocolate Cake</i> </h2>
+    <div class=" recipe-card">
+        <div class ="recipe-content">
+            <h2 class="recipe-titel"><i>Chocolate Cake</i> </h2>
+             <img class="img" src="download (4).jpg">
             <p class="description">soft and rich Chocolate dessert</p>
             <p class="time">40 mins</p>
-             <div class="nutrition-table">
-                <table>
+            <div class="nutrition-table">
+                <table class="nutrition-table">
                     <thead>
                         <th colspan="2">Nutrition fact for 100g</th>
                         <tr>
@@ -325,7 +455,6 @@
                         </tr>
                     </thead>
                 </table>
-            <img class="img" src="download (4).jpg">
             <h2>Cake recipe</h2>
             <h3>Ingrediants:</h3>
             <ul>
@@ -340,13 +469,12 @@
                 <li>Bake</li>
                 <li>cool and serve</li>
             </ol>
-        </div>
     </div>
     </div>
-     </main>
+    </div>
     <footer>
         <p>&copy; 2026 Cooking Project. All Rights Reserved,Created By Menna usama</p>
     </footer>
-    <script src="main.js"></script>
 </body>
+
 </html>
