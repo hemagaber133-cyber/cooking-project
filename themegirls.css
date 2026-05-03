@@ -1,4 +1,3 @@
-/*ده الكود الموحد*/
 * {
     margin: 0;
     padding: 0;
@@ -96,9 +95,6 @@ footer{
 .menu-btn {
     display: none;
 }
-/*ده نهايته*/
-
-/*كود صفحة القارنة */
 .description {
     background:url("foodcomparisonphoto.jpg"); 
     
@@ -217,9 +213,119 @@ td {
 tr:nth-child(even) {
     background-color:#ffa8a824
 }
+  header.head{
+            min-height: 50vh;
+    background-image: url(pngtree-top-4k-hd-food-wallpapers-for-social-media-picture-image_16320578.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    padding:  60px 20px ;
+    text-align: center;
+    color: #990000;
+}
+ h2.recipe-titel{
+    font-family: playfair dispiay ,serif;
+    color: #990000;
+    text-align: center;
+    margin-top: 60px;
+}
+div.container{
+    max-width: 100%;
+    margin: 20x auto;
+    background: #fff8e7;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0,0.5);
+    flex: 1;
+    display: block;
+}
 
-/* انسخ كود صفحتك هنا*/
+ img.img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 3px solid #990000;
+    transition:transform 0.3s ease;
+    max-width: 100%;
+    width: 80%;
+}
+img.img:hover{
+    transform: scale(1.25);
+}
+ul.Ingrediants,ol.Steps{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 20px;
+}
+table.nutrition-table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%
+    text-align:center;
+    border:solid;
+}
+table.nutrition-table td{
+    padding: 10px;
+    border-bottom: 1px solid #d2b48c;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient( to right,transparent,#990000,transparent);
+    margin: 40px 0;
+}
+p.description{
+    font-family: 'playfair display', serif;
+    font-size: 25px;
+    font-style: italic;
+    color:#990000 ;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    
+}
+p.time{
+    font-family: 'liber Baskerville',serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #990000;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+}
+div.recipe-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #f5f5dc;
+    max-width: 800px;
+    margin: 20px auto;
+}
+div.recipe-content{
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, serif;
+    color: #990000;
+}
+img.img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;}
 
+    h1{text-align: center;
+        margin-bottom: 50px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-
-
+    }
