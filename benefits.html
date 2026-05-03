@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,104 @@
     <title>Benefits</title>
     <link rel="stylesheet" href="themegirls.css" id="theme-link">
 </head>
-<body class="web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #FFF8E7;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            font-family: serif;
+        }
+
+        .nour {
+            color: #990000;
+            text-align: center;
+            font-size: 45px;
+            margin: 30px 0;
+        }
+
+        nav {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-links li a {
+            display: block;
+            color: #F5F5DC;
+            text-align: center;
+            padding: 20px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .benefits-container {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: wrap !important; 
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .benefit-item {
+            width: 45% !important; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .benefit-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            cursor: pointer;
+        }
+
+        .benefit-item img:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .benefit-item p {
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            background: rgba(128, 0, 32, 0.8);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+
 <nav>
         <div class="logo">
             <span class="COOK">COOK</span><span class="ING">ING</span>
