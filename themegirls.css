@@ -444,6 +444,8 @@ section.search-container{
     margin: 0;
     font-family: serif;
     min-height: 100vh;
+    overflow-x: hidden; 
+         
 }
 
 .navnour {
@@ -484,13 +486,15 @@ li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-}benefits-container {
+}
+.benefits-container {
     display: flex !important;
     flex-wrap: wrap !important; 
     justify-content: center;
     gap: 20px;
     padding: 40px 20px;
     width: 100%;
+    max-width: 1200px;
     box-sizing: border-box;
     position: relative;
     z-index: 1;
@@ -539,23 +543,3 @@ li a {
     margin-top: 50px;
     font-family: serif;
 }
-
-@media (max-width: 768px) {
-    .nour {
-        font-size: 30px;
-    }
-}
- .nav-links {
-        flex-direction: column;
-    }
-
-    .nav-links li a {
-        padding: 10px;
-        font-size: 16px;}
- .benefit-item {
-        width: 90% !important;}
-   
-    .benefit-item img {
-        height: 250px;}
-}
-
