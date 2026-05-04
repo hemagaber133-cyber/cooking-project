@@ -60,6 +60,7 @@ if(emailinput=== "" || password === ""){
     return;
 }
     alert("Welcome to our resturant!");
+    window.location.href="https://hemagaber133-cyber.github.io/cooking-project/index.html";
     });
 });
 /*-----Sign up page js-----*/
