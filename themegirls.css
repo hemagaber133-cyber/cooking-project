@@ -90,6 +90,7 @@ footer{
     padding-top:30px ;
     
 }
+/*منة محسن كود */
 
 
 .menu-btn {
@@ -212,6 +213,8 @@ td {
 
 tr:nth-child(even) {
     background-color:#ffa8a824
+
+    /*منة الله اسامة كود */
 }
   header.head{
             min-height: 50vh;
@@ -279,7 +282,7 @@ hr{
     background-image: linear-gradient( to right,transparent,#990000,transparent);
     margin: 40px 0;
 }
-p.description{
+p.about{
     font-family: 'playfair display', serif;
     font-size: 25px;
     font-style: italic;
@@ -329,130 +332,87 @@ img.img{
         justify-content: center;
 
     }
-/* الاستايل بتاع ال benefits */
- body {
-    background-color: #FFF8E7;
-    margin: 0;
-    font-family: serif;
-    min-height: 100vh;
-}
+    /*تضبيط كود ال home*/
+    header.Header{
+        color: #990000;
+        text-align: center;
+        padding-top: 40px;
 
-nav {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
-}
-
-.nour {
-    color: #990000;
-    text-align: center;
-    font-size: 45px;
-    margin: 30px 0;
-}
-
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-li a {
-    display: block;
-    color: #F5F5DC;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.benefits-container {
-    display: flex !important;
-    flex-wrap: wrap !important; 
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-}
-
-.benefit-item {
-    width: 45% !important; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.benefit-item img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-}
-
-.benefit-item img:hover {
-    transform: scale(1.05);
-}
-
-.benefit-item p {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    background: rgba(128, 0, 32, 0.8);
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-footer {
-    background-color: #990000;
-    color: #F5F5DC;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    margin-top: 50px;
-    font-family: serif;
-}
-
-@media (max-width: 768px) {
-    .nour {
+    }
+    p.txt-header{
+        text-align: center;
+        font-family: playfair display ,serif;
         font-size: 30px;
-    }
+        font-style: italic;
+        color: #990000;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
 
-    .nav-links {
-        flex-direction: column;
+    }
+    figure.fig{
+        display: flex;
+        justify-content: center;
         align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
     }
-
-    .nav-links li a {
-        padding: 10px;
-        font-size: 16px;
+    figure.fig img{
+        max-height: 100%;
+        width: auto;
+        display: block;
     }
-
-    .benefit-item {
-        width: 90% !important;
+    figcaption{
+        text-align: center;
+        color: #990000;
+        font-family: playfair display,serif;
+        font-size: 25px;
+        font-style: italic;
+        letter-spacing: 0.5px;
     }
-
-    .benefit-item img {
-        height: 250px;
+    /*تعديل صفحة ال login*/
+    div.gaga h1{
+        color: #990000;
+        text-align: center;
+        padding-top: 70px;
     }
-}
+    div.gaga p{
+        text-align: center;
+        font-family: playfair display , serif;
+        font-size: 25px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+        color: #990000;
+    }
+    form#login-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        padding: 20px;
+    }
+    div.arbus label{
+        color: #990000;
+        font-family: playfair display, serif;
+        font-size: 25px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+    div.faah label{
+         color: #990000;
+        font-family: playfair display, serif;
+        font-size: 25px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+    div.gogo span{
+         color: #990000;
+        font-family: playfair display, serif;
+        font-size: 25px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+    }
+     div.gogo a{
+        text-decoration: none;
+        color: #000
+     }
