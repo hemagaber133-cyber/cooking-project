@@ -415,6 +415,7 @@ footer {
     flex-direction: column;
 }
 .gaga{
+    width:50px;
     text-align: center;
     background-color: var(--main-color);
     margin-top:80px;
@@ -475,7 +476,6 @@ footer {
     font-size:20px;
 }
 #password{
-    width:50%;
     border-radius:50px;
     margin-bottom:30px;
     padding:10px 30px;
