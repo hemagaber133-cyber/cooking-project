@@ -44,60 +44,7 @@ function search() {
     });
 }
 /*-----Ziad mahmoud Edit-----*/
-document.addEventListener("DOMContentLouded",function()
-{
-    const loginForm=
-document.getElementByld("login-form");
-    loginForm.addEventListener("submit",function(event)
-{
-    event.preventDefault();
-    const emailinput=
-document.getElementByld("email").value;
-    const passwordinput=
-document.getElementByld("password").value;
-if(emailinput=== "" || password === ""){
-    alert("Please fill out this field.");
-    return;
-}
-    alert("Welcome to our resturant!");
-    window.location.href="https://hemagaber133-cyber.github.io/cooking-project/index.html";
-    });
-});
-/*-----Sign up page js-----*/
-const registerForm = document.getElementById('registerForm');
-const regMessage = document.getElementById('reg-message');
 
-// Handle form submission
-registerForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent page reload
-
-    const name = document.getElementById('reg-name').value;
-    const email = document.getElementById('reg-email').value;
-    const password = document.getElementById('reg-password').value;
-
-    // Simple validation
-    if (name.length < 3) {
-        showMessage('Name must be more than 2 characters.', 'red');
-        return;
-    }
-    
-    if (password.length < 6) {
-        showMessage('Password must be at least 6 characters long.', 'red');
-        return;
-    }
-
-    // Success action (you can connect this to your API/Backend later)
-    showMessage('Account created successfully! Redirecting...', 'green');
-    
-    // Reset form
-    registerForm.reset();
-});
-
-// Helper function to display messages
-function showMessage(text, color) {
-    regMessage.textContent = text;
-    regMessage.style.color = color;
-}
 
 //جافا بتاعت صفحة المقارنة
 const foodData = {
