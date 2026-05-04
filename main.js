@@ -26,6 +26,23 @@ window.onload = function() {
         themeLink.setAttribute('href', 'themegirls.css');
     }
 };
+function search() {
+    let input = document.getElementById('myInput').value.toLowerCase();
+    let cards = document.querySelectorAll('.recipe-card');
+
+    cards.forEach(card => {
+        let titleElement = card.querySelector('.recipe-titel');
+        if (titleElement) {
+            let title = titleElement.textContent.toLowerCase();
+
+            if (title.includes(input)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        }
+    });
+}
 /*-----Ziad mahmoud Edit-----*/
 document.addEventListener("DOMContentLouded",function()
 {
