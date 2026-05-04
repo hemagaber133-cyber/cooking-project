@@ -96,7 +96,7 @@ footer{
 .menu-btn {
     display: none;
 }
-.desc {
+.description {
     background:url("foodcomparisonphoto.jpg"); 
     
     background-size: cover;
@@ -110,12 +110,12 @@ footer{
     color:white;
 }
 
-.desc h1 {
+.description h1 {
     font-size:50px; 
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
- .desc p{
+ .description p{
     font-size: large;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     font-weight: bold;
