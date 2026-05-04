@@ -316,91 +316,6 @@ footer {
 .submit-btn:hover{
   transform: scale(1.05); 
 }
-/*Ziad mahmoud Edit*/
-.m1{
-    background-color: var(--nav-color);
-}
-.gaga{
-    text-align: center;
-    background-color: var(--main-color);
-    margin-top:80px;
-    padding:20px 100px;
-    border-radius:10px;
-}
-.gaga h1{
-    display:block;
-    width:100%;
-    background:black;
-    -webkit-background-clip: text;
-    background-clip:text;
-    color:transparent;
-    margin-bottom:55px;
-}
-.gaga p{
-    display:block;
-    background: var(--nav-color);
-    color:white;
-    padding:10px 40px;
-    border-radius:10px;
-    display:inline-block;
-    font-size:20px;
-}
-#login-form{
-    background-color: var(--main-color);
-    margin-top:40px;
-    padding:15px 40px;
-    border-radius:10px;
-    text-align: center;
-}
-.arbus label{
-    background:black;
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
-    display:block;
-    margin-bottom:10px;
-    margin-top:30px;
-    font-size:20px;
-}
-#email{
-    border-radius:50px;
-    margin-bottom:30px;
-    padding:10px 30px;
-    content:20px 40px;
-    font-size:18px;
-    background-color:rgba(252, 248, 246, 0.541)
-}
-.faah label{
-    background:black;
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
-    display:block;
-    margin-bottom:10px;
-    margin-top:10px;
-    font-size:20px;
-}
-#password{
-    border-radius:50px;
-    margin-bottom:30px;
-    padding:10px 30px;
-    content:20px 40px;
-    font-size:18px;
-    background-color:rgba(252, 248, 246, 0.541)
-}
-.b1{
-    color:white;
-    padding: 5px 15px;
-    background-color: var(--nav-color);
-    font-size:17px;
-}
-.gogo{
-    margin-bottom:10px;
-    padding:10px;
-    border-radius: 20px;
-    font-size:18px;
-    background-color: var(--main-color);
-    margin-top:10px;
 /*-----Amr Atef EDIT FOR SIGNUP PAGE-----*/
 .reg-body {
     background-color: var(--nav-color);
@@ -491,3 +406,89 @@ footer {
     font-weight: 500;
     min-height: 20px;
 }
+/*Ziad mahmoud Edit*/
+.m1{
+    background-color: var(--nav-color);
+}
+.gaga{
+    text-align: center;
+    background-color: var(--main-color);
+    margin-top:80px;
+    padding:20px 100px;
+    border-radius:10px;
+}
+.gaga h1{
+    display:block;
+    width:100%;
+    background:black;
+    -webkit-background-clip: text;
+    background-clip:text;
+    color:transparent;
+    margin-bottom:55px;
+}
+.gaga p{
+    display:block;
+    background: var(--nav-color);
+    color:white;
+    padding:10px 40px;
+    border-radius:10px;
+    display:inline-block;
+    font-size:20px;
+}
+#login-form{
+    background-color: var(--main-color);
+    margin-top:40px;
+    padding:15px 40px;
+    border-radius:10px;
+    text-align: center;
+}
+.arbus label{
+    background:black;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    display:block;
+    margin-bottom:10px;
+    margin-top:30px;
+    font-size:20px;
+}
+#email{
+    border-radius:50px;
+    margin-bottom:30px;
+    padding:10px 30px;
+    content:20px 40px;
+    font-size:18px;
+    background-color:rgba(252, 248, 246, 0.541)
+}
+.faah label{
+    background:black;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    display:block;
+    margin-bottom:10px;
+    margin-top:10px;
+    font-size:20px;
+}
+#password{
+    border-radius:50px;
+    margin-bottom:30px;
+    padding:10px 30px;
+    content:20px 40px;
+    font-size:18px;
+    background-color:rgba(252, 248, 246, 0.541)
+}
+.b1{
+    color:white;
+    padding: 5px 15px;
+    background-color: var(--nav-color);
+    font-size:17px;
+}
+.gogo{
+    margin-bottom:10px;
+    padding:10px;
+    border-radius: 20px;
+    font-size:18px;
+    background-color: var(--main-color);
+    margin-top:10px;
+
