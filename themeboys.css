@@ -317,23 +317,19 @@ footer {
   transform: scale(1.05); 
 }
 /*-----Amr Atef EDIT FOR SIGNUP PAGE-----*/
-.reg-body {
-    background-color: var(--nav-color);
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+
 
 /* Main Container */
 .reg-container {
-    background-color: var(--main-color);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+     background-color: var(--main-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px var(--nav-color);
+    text-shadow: 2px 4px 8px var(--nav-color);
+    color: white;
 }
 
 /* Header Section */
@@ -343,12 +339,14 @@ footer {
 }
 
 .reg-title {
-    color: #333333;
+    color: white;
+    text-shadow: 2px 4px 8px var(--nav-color);
     margin-bottom: 8px;
 }
 
 .reg-subtitle {
-    color: #666666;
+    color: white;
+    text-shadow: 2px 4px 8px var(--nav-color);
     font-size: 14px;
 }
 
@@ -360,7 +358,8 @@ footer {
 .reg-label {
     display: block;
     margin-bottom: 6px;
-    color: #333333;
+    color: white;
+    text-shadow: 2px 4px 8px var(--nav-color);
     font-weight: 500;
 }
 
@@ -408,19 +407,18 @@ footer {
     min-height: 20px;
 }
 /*Ziad mahmoud Edit*/
-.m1{
-    background-color: var(--nav-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.gaga{
-    text-align: center;
+
+.gaga,#login-form,.gogo{
     background-color: var(--main-color);
-    margin-top:80px;
-    padding:20px 100px;
-    border-radius:10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px var(--nav-color);
+    text-shadow: 2px 4px 8px var(--nav-color);
+    color: white;
+    
 }
 .gaga h1{
     display:block;
@@ -430,6 +428,7 @@ footer {
     background-clip:text;
     color:transparent;
     margin-bottom:55px;
+    color: white;
 }
 .gaga p{
     display:block;
@@ -440,13 +439,7 @@ footer {
     display:inline-block;
     font-size:20px;
 }
-#login-form{
-    background-color: var(--main-color);
-    margin-top:40px;
-    padding:15px 40px;
-    border-radius:10px;
-    text-align: center;
-}
+
 .arbus label{
     background:black;
     -webkit-background-clip:text;
@@ -456,6 +449,7 @@ footer {
     margin-bottom:10px;
     margin-top:30px;
     font-size:20px;
+    color: white;
 }
 #email{
     border-radius:50px;
@@ -463,7 +457,7 @@ footer {
     padding:10px 30px;
     content:20px 40px;
     font-size:18px;
-    background-color:rgba(252, 248, 246, 0.541)
+    background-color:white;
 }
 .faah label{
     background:black;
@@ -474,6 +468,7 @@ footer {
     margin-bottom:10px;
     margin-top:10px;
     font-size:20px;
+    color: white;
 }
 #password{
     border-radius:50px;
@@ -481,7 +476,7 @@ footer {
     padding:10px 30px;
     content:20px 40px;
     font-size:18px;
-    background-color:rgba(252, 248, 246, 0.541)
+    background-color:white;
 }
 .b1{
      text-align: center;
@@ -490,15 +485,4 @@ footer {
     background-color: var(--nav-color);
     font-size:17px;
 }
-.gogo{
-    margin-bottom:10px;
-    padding:10px;
-    border-radius: 20px;
-    font-size:18px;
-    background-color: var(--main-color);
-    margin-top:10px;
-}
-.fo4{
-    width:100%;
-}
-    
+
