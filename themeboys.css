@@ -320,6 +320,7 @@ footer {
 .reg-body {
     background-color: var(--nav-color);
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
