@@ -26,3 +26,22 @@ window.onload = function() {
         themeLink.setAttribute('href', 'themegirls.css');
     }
 };
+/*-----Ziad mahmoud Edit-----*/
+document.addEventListener("DOMContentLouded",function()
+{
+    const loginForm=
+document.getElementByld("login-form");
+    loginForm.addEventListener("submit",function(event)
+{
+    event.preventDefault();
+    const emailinput=
+document.getElementByld("email").value;
+    const passwordinput=
+document.getElementByld("password").value;
+if(emailinput=== "" || password === ""){
+    alert("Please fill out this field.");
+    return;
+}
+    alert("Welcome to our resturant!");
+    });
+});
