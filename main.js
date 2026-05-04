@@ -44,28 +44,31 @@ function search() {
     });
 }
 /*-----Ziad mahmoud Edit-----*/
-document.addEventListener("DOMContentLouded",function()
-{
-    const loginForm=
-document.getElementByld("login-form");
-    loginForm.addEventListener("submit",function(event)
-{
-    event.preventDefault();
-    const emailInput=
-document.getElementByld("email").value;
-    const passwordInput=
-document.getElementByld("password").value;
-if(emailinput=== "" || password === ""){
-    alert("Please fill out this field.");
-    return;
-}
-const userExists = registeredUsers.some(user => user.email === emailInput && user.password === passwordInput);
-if (!userExists) {
-    alert("Account not found or incorrect password. Please check your details or sign up.");
-    return;}
-    alert("Welcome to our resturant!");
-    window.location.href="home.html";
-    });
+document.addEventListener("DOMContentLoaded", function() {
+    const registeredUsers = [
+        { email: "test@example.com", password: "password123" }
+    ];
+    const loginForm = document.getElementById("login-form");
+    if (loginForm) {
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById("email").value;
+            const passwordInput = document.getElementById("password").value;
+            if (emailInput === "" || passwordInput === "") {
+                alert("Please fill out this field.");
+                return;
+            }
+            const userExists = registeredUsers.some(user => 
+                user.email === emailInput && user.password === passwordInput
+            );
+            if (!userExists) {
+                alert("Account not found or incorrect password. Please check your details or sign up.");
+                return;
+            }
+            alert("Welcome to our restaurant!");
+            window.location.href = "home.html";
+        });
+    }
 });
 
 /*-----Sign up page js-----*/
