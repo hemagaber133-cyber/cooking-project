@@ -363,7 +363,7 @@ footer {
     background-color: var(--main-color);
     margin-top:10px;
 /*-----Amr Atef EDIT FOR SIGNUP PAGE-----*/
-body{
+.Bodyy{
     background:var(--nav-color);
     margin: 0;
     display: flex;
