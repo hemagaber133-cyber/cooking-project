@@ -406,48 +406,92 @@ footer {
     background-color: var(--main-color);
     margin-top:10px;
 /*-----Amr Atef EDIT FOR SIGNUP PAGE-----*/
-.Bodyy{
-    background:var(--nav-color);
-    margin: 0;
+.reg-body {
+    background-color: var(--nav-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: arial;
-}
-.c {
-    background: var(--main-color);
-    width: 290px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-.c h2{ color: #000; margin-top: 0; }
-.f { margin-bottom: 10px; text-align: left; }
-.la1 { font-size: 13px; font-weight: bold; color: #000; display: block; }
-#qq {
-    width: 100%;
-    padding: 8px;
-    border-radius: 15px;
-    border: none;
-    background: #1a331a;
-    color: #fff;
-    box-sizing: border-box;
-    outline: none;
-}
-.bo1 {
-    margin-top: 10px;
-    padding: 8px 25px;
-    background:var(--nav-color);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-.aa1 {
-    display: block;
-    margin-top: 15px;
-    color: #fff;
-    font-size: 12px;
+    min-height: 100vh;
 }
 
+/* Main Container */
+.reg-container {
+    background-color: var(--main-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header Section */
+.reg-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.reg-title {
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.reg-subtitle {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* Input Groups */
+.reg-input-group {
+    margin-bottom: 15px;
+}
+
+.reg-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.reg-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.reg-input:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+/* Submit Button */
+.reg-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color:  var(--nav-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+/* Footer Links and Text */
+.reg-footer-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+/* Status Message */
+.reg-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 20px;
+}
