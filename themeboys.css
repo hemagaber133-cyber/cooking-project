@@ -415,7 +415,6 @@ footer {
     flex-direction: column;
 }
 .gaga{
-    width:50px;
     text-align: center;
     background-color: var(--main-color);
     margin-top:80px;
