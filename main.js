@@ -98,3 +98,66 @@ function showMessage(text, color) {
     regMessage.style.color = color;
 }
 
+//جافا بتاعت صفحة المقارنة
+const foodData = {
+    "pizza": { name: "Pizza", cal: "266 kcal", protein: "11g", fat: "10g", carbs: "33g", chol: "17mg", img: "pizzacompare.jpg" },
+    "burger": { name: "Burger", cal: "295 kcal", protein: "17g", fat: "14g", carbs: "24g", chol: "47mg", img: "burgercompare.jpg" },
+    "pasta": { name: "Pasta", cal: "131 kcal", protein: "5g", fat: "1.1g", carbs: "25g", chol: "70mg", img: "pastacompare.jpg" },
+    "sushi": { name: "Sushi", cal: "143 kcal", protein: "4g", fat: "0.5g", carbs: "30g", chol: "4mg", img: "sushicompare.jpg" },
+    "spaghetti": { name: "Spaghetti", cal: "158 kcal", protein: "6g", fat: "0.9g", carbs: "31g", chol: "80mg", img: "spagcompare.jpg" },
+    "steak": { name: "Steak", cal: "271 kcal", protein: "25g", fat: "19g", carbs: "0g", chol: "78mg", img: "steakcompare.jpg" },
+    "salad": { name: "Salad", cal: "15 kcal", protein: "8g", fat: "0.2g", carbs: "10g", chol: "50mg", img: "saladcompare.jpg" },
+    "fries": { name: "fries", cal: "200 kcal", protein: "1g", fat: "7g", carbs: "3g", chol: "30mg", img: "friescompare.jpg" },
+    "friedchicken": { name: "friedchicken", cal: "257 kcal", protein: "3g", fat: "13g", carbs: "34g", chol: "58mg", img: "friedcompare.jpg" },
+    "cake": { name: "Cake", cal: "215kcal", protein: "9g", fat: "20g", carbs: "54g", chol: "56mg", img: "cakecompare.jpg" },
+    "chocolatecake": { name: "ChocolateCake", cal: "371 kcal", protein: "2g", fat: "16g", carbs: "53g", chol: "50mg", img: "choccompare.jpg" },
+    "cookies": { name: "cookies", cal: "100 kcal", protein: "9g", fat: "15g", carbs: "70g", chol: "67mg", img: "cookiescompare.jpg" },
+     "donut": { name: "donut", cal: "150 kcal", protein: "4g", fat: "10g", carbs: "53g", chol: "48mg", img: "donutcompare.jpg" }
+    
+    
+    
+};
+
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+
+    const food1Key = document.getElementById('food1').value;
+    const food2Key = document.getElementById('food2').value;
+
+    const food1 = foodData[food1Key];
+    const food2 = foodData[food2Key];
+
+    if (food1 && food2) {
+       
+        document.getElementById('foodcomparisonimages').style.display = 'flex';
+        document.getElementById('table-result').style.display = 'block';
+
+      
+        document.getElementById('food1Img').src = food1.img;
+        document.getElementById('food1Name').innerText = food1.name;
+        document.getElementById('food2Img').src = food2.img;
+        document.getElementById('food2Name').innerText = food2.name;
+
+        document.getElementById('foodName1').innerText = food1.name;
+        document.getElementById('foodName2').innerText = food2.name;
+
+      
+        document.getElementById('cal1').innerText = food1.cal;
+        document.getElementById('cal2').innerText = food2.cal;
+        document.getElementById('protein1').innerText = food1.protein;
+        document.getElementById('protein2').innerText = food2.protein;
+        document.getElementById('fat1').innerText = food1.fat;
+        document.getElementById('fat2').innerText = food2.fat;
+        document.getElementById('carbs1').innerText = food1.carbs;
+        document.getElementById('carbs2').innerText = food2.carbs;
+        document.getElementById('chol1').innerText = food1.chol;
+        document.getElementById('chol2').innerText = food2.chol;
+
+        
+        window.scrollTo({ top: document.getElementById('table-result').offsetTop - 50, behavior: 'smooth' });
+    }
+});
+
+
