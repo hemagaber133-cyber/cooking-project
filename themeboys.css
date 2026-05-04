@@ -319,10 +319,6 @@ footer {
 /*Ziad mahmoud Edit*/
 .m1{
     background-color: var(--nav-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .gaga{
     text-align: center;
