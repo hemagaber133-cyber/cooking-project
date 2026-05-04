@@ -45,14 +45,4 @@ if(emailinput=== "" || password === ""){
     alert("Welcome to our resturant!");
     });
 });
-/*-----Amr Atef edit-----*/
-function go() {
-    var user = document.getElementById('n').value;
-    var mail = document.getElementById('e').value;
-    
-    if (user == "" || mail == "") {
-        alert("fill all fields!");
-    } else {
-        alert("Done! Welcome " + user);
-    }
-}
+
