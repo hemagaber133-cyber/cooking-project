@@ -1,63 +1,36 @@
 
-#rodina-page {
-    background-color: #1a1a1a; 
-    color: #e3e3e3; 
-    font-family: sans-serif;
-}
-
-#rodina-page .page-title {
-    text-align: center;
-    padding: 30px;
-    color: #ffffff;
-    font-size: 2.2rem;
-}
-
-#rodina-page .COOK {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-#rodina-page .ING {
-    color: #e67e22; 
-    font-weight: bold;
-}
-
 #rodina-page .video-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+    flex-direction: column;
+    align-items: center;    
+    gap: 40px;            
     padding: 20px;
 }
 
 #rodina-page .video-card {
-    background: #262626;
-    width: 320px;
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid #333;
-    transition: 0.3s ease;
-}
-
-#rodina-page .video-card:hover {
-    border-color: #e67e22; 
-    transform: translateY(-5px);
+    background: #ffffff;    
+    width: 100%;
+    max-width: 600px;      
+    padding: 20px;
+    border-radius: 15px;   
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+    border: 1px solid #ddd;
+    text-align: center;    
 }
 
 #rodina-page .video-card h2 {
-    color: #e67e22; 
-    text-align: center;
-    font-size: 1.5rem;
+    color: #e67e22;       
     margin-bottom: 15px;
+    font-size: 1.8rem;
 }
 
 #rodina-page .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
+    border-radius: 10px;
     overflow: hidden;
-    border-radius: 8px;
-    background: #000;
+    margin-bottom: 15px;
 }
 
 #rodina-page .video-wrapper iframe {
@@ -70,17 +43,7 @@
 }
 
 #rodina-page .video-card p {
-    text-align: center;
-    color: #b3b3b3;
-    margin-top: 15px;
-    font-size: 0.95rem;
-}
-
-#rodina-page footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-    border-top: 1px solid #333;
-    color: #888;
-    font-size: 0.9rem;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
