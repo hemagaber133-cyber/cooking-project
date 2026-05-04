@@ -361,6 +361,9 @@ img.img{
         max-height: 100%;
         width: auto;
         display: block;
+         border-radius: 10px;
+        border-color: #990000;
+        transition: scale(1.05);
     }
     figcaption{
         text-align: center;
