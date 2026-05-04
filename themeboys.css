@@ -475,6 +475,7 @@ footer {
     font-size:20px;
 }
 #password{
+    width:50%;
     border-radius:50px;
     margin-bottom:30px;
     padding:10px 30px;
