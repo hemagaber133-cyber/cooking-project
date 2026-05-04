@@ -408,8 +408,7 @@ footer {
 }
 /*Ziad mahmoud Edit*/
 .m1{
-    background-color: var(--nav-color);
-}
+    background-color: var(--nav-color);}
 .gaga{
     text-align: center;
     background-color: var(--main-color);
@@ -491,4 +490,5 @@ footer {
     font-size:18px;
     background-color: var(--main-color);
     margin-top:10px;
+}
 
