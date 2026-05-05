@@ -543,3 +543,58 @@ li a {
     margin-top: 50px;
     font-family: serif;
 }
+/*تعديل صفحة ال signup*/
+div.reg-header{
+    color: #990000;
+    text-align: center;
+    padding-top: 80px;
+    font-size: x-large;
+}
+div.reg-header p{
+    font-family: Verdana, Geneva, Tahoma, serif;
+    font-style: italic;
+    font-size: medium;
+    padding-top: 20px;
+}
+div.reg-input-group{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+
+}
+div.reg-input-group label{
+    color: #990000;
+    font-family: playfair display ,serif;
+    font-style: italic;
+    font-size: x-large;
+}
+div.reg-input-group input{
+      width: 250px;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid #990000;
+        border-radius: 25px;
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.1);
+}
+p.reg-footer-text{
+      color: #990000;
+        font-family: playfair display, serif;
+        font-size: 25px;
+        font-style: italic;
+        letter-spacing: 0.5px;
+}
+p.reg-footer-text a{
+      text-decoration: none;
+        color: #000
+}
+
+
+
+      
+             
+
+
