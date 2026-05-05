@@ -110,6 +110,7 @@ if (form) {
     });
 }
 /*-----Ziad mahmoud Edit-----*/
+
 document.addEventListener("DOMContentLoaded", function() {
     const registeredUsers = [
         { email: "test@example.com", password: "password123" }
