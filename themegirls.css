@@ -119,11 +119,11 @@ footer{
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
- .description p{
+.description p{
     font-size: large;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     font-weight: bold;
-    color:white ;
+    color:#990000 ;
     
  }
 
