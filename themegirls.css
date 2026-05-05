@@ -94,7 +94,6 @@ footer{
     padding-top:30px ;
     
 }
-/*منة محسن كود */
 
 
 .menu-btn {
@@ -219,7 +218,43 @@ td {
 tr:nth-child(even) {
     background-color:#ffa8a824
 
-    /*منة الله اسامة كود */
+    
+#firstfood, #secondfood {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+#firstfood img,
+#secondfood img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #990000;
+    transition: transform 0.3s ease;
+}
+
+#firstfood p,
+#secondfood p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #990000;
+    font-size: 18px;
+}
+
+
+
+#firstfood:hover,
+#secondfood:hover {
+   
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
 }
   header.head{
             min-height: 50vh;
@@ -342,7 +377,7 @@ img.img{
         justify-content: center;
 
     }
-    /*تضبيط كود ال home*/
+  
     header.Header{
         color: #990000;
         text-align: center;
@@ -416,7 +451,7 @@ section.search-container1 button{
         box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.1);
     } 
 
-    /*تعديل صفحة ال login*/
+  
     div.gaga h1{
         color: #990000;
         text-align: center;
@@ -484,7 +519,7 @@ div.arbus input{
         text-decoration: none;
         color: #000
      }
-     /*نور كود صفحة benefits*/
+     
      .web {
     
     font-family: serif;
@@ -562,7 +597,7 @@ div.arbus input{
     margin-top: 50px;
     font-family: serif;
 }
-/*تعديل صفحة ال signup*/
+
 div.reg-header{
     color: #990000;
     text-align: center;
@@ -610,7 +645,7 @@ p.reg-footer-text a{
       text-decoration: none;
         color: #000
 }
-/* تعديل صفحة الفديو  */
+
 .page-title,.video-card{
     background-color:#990000;
     text-align: center;
@@ -623,7 +658,6 @@ p.reg-footer-text a{
     text-shadow: 2px 4px 8px #990000;
     color: white;
 }
-/* تعديل صفحة التواصل*/
 .nv{
      background: url('foodfast.jpg');
    
