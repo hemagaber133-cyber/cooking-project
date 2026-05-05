@@ -76,7 +76,7 @@ const registerForm = document.getElementById('registerForm');
 const regMessage = document.getElementById('reg-message');
 
 // Handle form submission
-registerForm.addEventListener('submit', function(event) {
+registerForm.addEventListener('.reg-submit-btn', function(event) {
     event.preventDefault(); // Prevent page reload
 
     const name = document.getElementById('reg-name').value;
