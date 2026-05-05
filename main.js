@@ -112,8 +112,7 @@ if (form) {
 /*-----Ziad mahmoud Edit-----*/
 document.addEventListener("DOMContentLoaded", function() {
     const registeredUsers = [
-        { email: "test@example.com", password: "password123" }
-    ];
+        
     const loginForm = document.getElementById("login-form");
     if (loginForm) {
         loginForm.addEventListener("submit", function(event) {
