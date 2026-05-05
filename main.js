@@ -139,40 +139,49 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /*-----Sign up page js-----*/
 const registerForm = document.getElementById('registerForm');
-const regMessage = document.getElementById('reg-message');
 
-// Handle form submission
-registerForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent page reload
+// إضافة هذا الشرط للتأكد من وجود العنصر قبل تنفيذه
+if (registerForm) {
+    const regMessage = document.getElementById('reg-message');
 
-    const name = document.getElementById('reg-name').value;
-    const email = document.getElementById('reg-email').value;
-    const password = document.getElementById('reg-password').value;
+    // Handle form submission
+    registerForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent page reload
 
-    // Simple validation
-    if (name.length < 3) {
-        showMessage('Name must be more than 2 characters.', 'red');
-        return;
+        const name = document.getElementById('reg-name').value;
+        const email = document.getElementById('reg-email').value;
+        const password = document.getElementById('reg-password').value;
+
+        // Simple validation
+        if (name.length < 3) {
+            showMessage('Name must be more than 2 characters.', 'red');
+            return;
+        }
+        
+        if (password.length < 6) {
+            showMessage('Password must be at least 6 characters long.', 'red');
+            return;
+        }
+
+        // Success action
+        showMessage('Account created successfully! Redirecting...', 'green');
+        
+        setTimeout(function() {
+            window.location.href = "login.html"; // الانتقال لصفحة تسجيل الدخول
+        }, 2000);
+        
+        // Reset form
+        registerForm.reset();
+    });
+
+    // Helper function to display messages
+    function showMessage(text, color) {
+        if (regMessage) {
+            regMessage.textContent = text;
+            regMessage.style.color = color;
+        }
     }
-    
-    if (password.length < 6) {
-        showMessage('Password must be at least 6 characters long.', 'red');
-        return;
-    }
-
-    // Success action (you can connect this to your API/Backend later)
-    showMessage('Account created successfully! Redirecting...', 'green');
-    
-    // Reset form
-    registerForm.reset();
-});
-
-// Helper function to display messages
-function showMessage(text, color) {
-    regMessage.textContent = text;
-    regMessage.style.color = color;
 }
-
 
 
 
