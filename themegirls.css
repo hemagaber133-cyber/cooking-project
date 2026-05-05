@@ -494,17 +494,7 @@ div.arbus input{
          
 }
 
-.navnour {
-    background: url('background.jpg');
-   
-    background-position: center;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
-}
+
 
 .nour {
     color: #990000;
