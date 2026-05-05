@@ -65,19 +65,14 @@ const foodData = {
 
 
 const form = document.querySelector('form');
-if (form) {
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const food1Element = document.getElementById('food1');
-        const food2Element = document.getElementById('food2');
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); 
 
-        if (food1Element && food2Element) {
-            const food1Key = food1Element.value;
-            const food2Key = food2Element.value;
+    const food1Key = document.getElementById('food1').value;
+    const food2Key = document.getElementById('food2').value;
 
-            const food1 = foodData[food1Key];
-            const food2 = foodData[food2Key];
-
+    const food1 = foodData[food1Key];
+    const food2 = foodData[food2Key];
     if (food1 && food2) {
        
         document.getElementById('foodcomparisonimages').style.display = 'flex';
@@ -107,9 +102,7 @@ if (form) {
         
         window.scrollTo({ top: document.getElementById('table-result').offsetTop - 50, behavior: 'smooth' });
     }
-  }
 });
-}
 /*-----Ziad mahmoud Edit-----*/
 document.addEventListener("DOMContentLoaded", function() {
     const registeredUsers = [
