@@ -114,6 +114,17 @@ ul li a:hover{
     border-bottom-right-radius: 20px;
      box-shadow: 5px 8px 10px var(--nav-color);
 }
+.search-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:var(--main-color);
+    margin-top: 0px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+     box-shadow: 5px 8px 10px var(--nav-color);
+}
 .search-bar {
     display: flex;
     align-items: center;
