@@ -192,5 +192,3 @@ localStorage.setItem('registeredUser', JSON.stringify(user));
 }
 
 
-
-
