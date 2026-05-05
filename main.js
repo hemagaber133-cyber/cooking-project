@@ -110,87 +110,87 @@ if (form) {
     });
 }
 /*-----Ziad mahmoud Edit-----*/
-document.addEventListener("DOMContentLoaded", function() {
-    const registeredUsers = [
-        { email: "test@example.com", password: "password123" }
-    ];
-    const loginForm = document.getElementById("login-form");
+document.addEventListener('DOMContentLoaded', function() {
+
+    // 1. كود إنشاء الحساب (Sign Up)
+    const registerForm = document.querySelector('.registerForm');
+    const regMessage = document.querySelector('.reg-message');
+
+    if (registerForm) {
+        registerForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // لمنع إعادة تحميل الصفحة
+
+            const inputs = document.querySelectorAll('.reg-input');
+            
+            const name = inputs[0].value;
+            const email = inputs[1].value;
+            const password = inputs[2].value;
+
+            if (name.length < 3) {
+                showMessage('Name must be more than 2 characters.', 'red');
+                return;
+            }
+
+            if (password.length < 6) {
+                showMessage('Password must be at least 6 characters long.', 'red');
+                return;
+            }
+
+            // تخزين البيانات مباشرة
+            let user = {
+                name: name,
+                email: email,
+                password: password
+            };
+            
+            localStorage.setItem('registeredUser', JSON.stringify(user));
+
+            showMessage('Account created successfully! Redirecting...', 'green');
+
+            setTimeout(function() {
+                window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html"; 
+            }, 2000);
+
+            registerForm.reset();
+        });
+
+        function showMessage(text, color) {
+            if (regMessage) {
+                regMessage.textContent = text;
+                regMessage.style.color = color;
+            }
+        }
+    }
+
+    // 2. كود تسجيل الدخول (Login)
+    const loginForm = document.querySelector('.loginForm');
+
     if (loginForm) {
-        loginForm.addEventListener("submit", function(event) {
-            event.preventDefault();
-            const emailInput = document.getElementById("email").value;
-            const passwordInput = document.getElementById("password").value;
-            if (emailInput === "" || passwordInput === "") {
-                alert("Please fill out this field.");
-                return;
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // الحقول بصفحة تسجيل الدخول
+            const enteredEmail = document.getElementById('email').value;
+            const enteredPassword = document.getElementById('password').value;
+
+            // جلب البيانات من الذاكرة
+            const savedUser = JSON.parse(localStorage.getItem('registeredUser'));
+
+            if (savedUser) {
+                // مقارنة البيانات
+                if (savedUser.email === enteredEmail && savedUser.password === enteredPassword) {
+                    alert("Welcome to our restaurant!");
+                    window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
+                } else {
+                    alert("Account not found or incorrect password. Please check your details or sign up.");
+                }
+            } else {
+                alert("No account found! Please sign up first.");
             }
-            const userExists = registeredUsers.some(user => 
-                user.email === emailInput && user.password === passwordInput
-            );
-            if (!userExists) {
-                alert("Account not found or incorrect password. Please check your details or sign up.");
-                return;
-            }
-            alert("Welcome to our restaurant!");
-            window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
         });
     }
+
 });
-
-/*-----Sign up page js-----*/
-const registerForm = document.getElementById('registerForm');
-
-// إضافة هذا الشرط للتأكد من وجود العنصر قبل تنفيذه
-if (registerForm) {
-    const regMessage = document.getElementById('reg-message');
-
-    // Handle form submission
-    registerForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent page reload
-
-        const name = document.getElementById('reg-name').value;
-        const email = document.getElementById('reg-email').value;
-        const password = document.getElementById('reg-password').value;
-
-        // Simple validation
-        if (name.length < 3) {
-            showMessage('Name must be more than 2 characters.', 'red');
-            return;
-        }
-        
-        if (password.length < 6) {
-            showMessage('Password must be at least 6 characters long.', 'red');
-            return;
-        }
-
-        // Success action
-        showMessage('Account created successfully! Redirecting...', 'green');
-        
-        const inputs=document.querySelectorAll('.reg-input');
-        
-        let user = {
-    name: inputs[0].value,
-    email: inputs[1].value,
-    password: inputs[2].value
-};
-localStorage.setItem('registeredUser', JSON.stringify(user));
-        
-        setTimeout(function() {
-            window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
-        }, 2000);
-        
-        // Reset form
-        registerForm.reset();
-    });
-
-    // Helper function to display messages
-    function showMessage(text, color) {
-        if (regMessage) {
-            regMessage.textContent = text;
-            regMessage.style.color = color;
-        }
-    }
-}
 
 
 
