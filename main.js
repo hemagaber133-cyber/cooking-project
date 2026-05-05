@@ -165,9 +165,16 @@ if (registerForm) {
 
         // Success action
         showMessage('Account created successfully! Redirecting...', 'green');
+
+        let user = {
+    name: name,
+    email: email,
+    password: password
+};
+localStorage.setItem('registeredUser', JSON.stringify(user));
         
         setTimeout(function() {
-            window.location.href = "login.html"; // الانتقال لصفحة تسجيل الدخول
+            window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
         }, 2000);
         
         // Reset form
