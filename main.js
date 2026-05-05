@@ -165,11 +165,13 @@ if (registerForm) {
 
         // Success action
         showMessage('Account created successfully! Redirecting...', 'green');
-
+        
+        const inputs=document.querySelectorAll('.reg-input');
+        
         let user = {
-    name: name,
-    email: email,
-    password: password
+    name: inputs[0].value,
+    email: inputs[1].value,
+    password: inputs[2].value
 };
 localStorage.setItem('registeredUser', JSON.stringify(user));
         
