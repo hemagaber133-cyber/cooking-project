@@ -233,7 +233,7 @@ tr:nth-child(even) {
     background-repeat: no-repeat;
     padding:  60px 20px ;
     text-align: center;
-    color: #990000;
+    color: white;
 }
 section.search-container .search-bar{    
         margin: 20px auto;
