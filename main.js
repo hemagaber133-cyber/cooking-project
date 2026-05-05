@@ -66,17 +66,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
             alert("Welcome to our restaurant!");
-            window.location.href = "home.html";
+            window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
         });
     }
 });
 
 /*-----Sign up page js-----*/
-const registerForm = document.getElementById('registerForm');
-const regMessage = document.getElementById('reg-message');
+const registerForm = document.getElementByld('registerForm');
+const regMessage = document.getElementByld('reg-message');
 
 // Handle form submission
-registerForm.addEventListener('.reg-submit-btn', function(event) {
+registerForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent page reload
 
     const name = document.getElementById('reg-name').value;
