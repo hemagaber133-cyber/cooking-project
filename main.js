@@ -107,7 +107,9 @@ if (form) {
         
         window.scrollTo({ top: document.getElementById('table-result').offsetTop - 50, behavior: 'smooth' });
     }
+  }
 });
+}
 /*-----Ziad mahmoud Edit-----*/
 document.addEventListener("DOMContentLoaded", function() {
     const registeredUsers = [
