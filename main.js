@@ -133,8 +133,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*-----Sign up page js-----*/
-const registerForm = document.getElementByld('registerForm');
-const regMessage = document.getElementByld('reg-message');
+const registerForm = document.getElementById('registerForm');
+const regMessage = document.getElementById('reg-message');
 
 // Handle form submission
 registerForm.addEventListener('submit', function(event) {
