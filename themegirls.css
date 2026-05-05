@@ -217,7 +217,7 @@ td {
 
 tr:nth-child(even) {
     background-color:#ffa8a824
-
+}
     
 #firstfood, #secondfood {
     display: flex;
