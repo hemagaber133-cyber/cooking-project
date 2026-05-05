@@ -512,6 +512,7 @@ div.arbus input{
     text-align: center;
     font-size: 45px;
     margin: 30px 0;
+    font-family:serif;
 }
 
 
@@ -561,6 +562,7 @@ div.arbus input{
     border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
+    font-family:serif;
 }
 
 .footernour {
