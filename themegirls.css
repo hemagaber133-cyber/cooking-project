@@ -119,14 +119,16 @@ footer{
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
-.description p{
-    font-size: large;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+.description p {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    color:#990000 ;
-    
- }
-
+    color: white;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    z-index: 10;
+}
 
 
 .selection {
