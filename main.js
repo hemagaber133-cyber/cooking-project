@@ -65,49 +65,55 @@ const foodData = {
 
 
 const form = document.querySelector('form');
-form.addEventListener('submit', function(e) {
-    e.preventDefault(); 
 
-    const food1Key = document.getElementById('food1').value;
-    const food2Key = document.getElementById('food2').value;
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
 
-    const food1 = foodData[food1Key];
-    const food2 = foodData[food2Key];
-    if (food1 && food2) {
-       
-        document.getElementById('foodcomparisonimages').style.display = 'flex';
-        document.getElementById('table-result').style.display = 'block';
+        const food1Element = document.getElementById('food1');
+        const food2Element = document.getElementById('food2');
 
-      
-        document.getElementById('food1Img').src = food1.img;
-        document.getElementById('food1Name').innerText = food1.name;
-        document.getElementById('food2Img').src = food2.img;
-        document.getElementById('food2Name').innerText = food2.name;
+        if (food1Element && food2Element) {
+            const food1Key = food1Element.value;
+            const food2Key = food2Element.value;
 
-        document.getElementById('foodName1').innerText = food1.name;
-        document.getElementById('foodName2').innerText = food2.name;
+            const food1 = foodData[food1Key];
+            const food2 = foodData[food2Key];
 
-      
-        document.getElementById('cal1').innerText = food1.cal;
-        document.getElementById('cal2').innerText = food2.cal;
-        document.getElementById('protein1').innerText = food1.protein;
-        document.getElementById('protein2').innerText = food2.protein;
-        document.getElementById('fat1').innerText = food1.fat;
-        document.getElementById('fat2').innerText = food2.fat;
-        document.getElementById('carbs1').innerText = food1.carbs;
-        document.getElementById('carbs2').innerText = food2.carbs;
-        document.getElementById('chol1').innerText = food1.chol;
-        document.getElementById('chol2').innerText = food2.chol;
+            if (food1 && food2) {
+                document.getElementById('foodcomparisonimages').style.display = 'flex';
+                document.getElementById('table-result').style.display = 'block';
 
-        
-        window.scrollTo({ top: document.getElementById('table-result').offsetTop - 50, behavior: 'smooth' });
-    }
-});
+                document.getElementById('food1Img').src = food1.img;
+                document.getElementById('food1Name').innerText = food1.name;
+                document.getElementById('food2Img').src = food2.img;
+                document.getElementById('food2Name').innerText = food2.name;
+
+                document.getElementById('foodName1').innerText = food1.name;
+                document.getElementById('foodName2').innerText = food2.name;
+
+                document.getElementById('cal1').innerText = food1.cal;
+                document.getElementById('cal2').innerText = food2.cal;
+                
+                document.getElementById('protein1').innerText = food1.protein;
+                document.getElementById('protein2').innerText = food2.protein;
+                document.getElementById('fat1').innerText = food1.fat;
+                document.getElementById('fat2').innerText = food2.fat;
+                document.getElementById('carbs1').innerText = food1.carbs;
+                document.getElementById('carbs2').innerText = food2.carbs;
+                document.getElementById('chol1').innerText = food1.chol;
+                document.getElementById('chol2').innerText = food2.chol;
+
+                window.scrollTo({ top: document.getElementById('table-result').offsetTop - 50, behavior: 'smooth' });
+            }
+        }
+    });
+}
 /*-----Ziad mahmoud Edit-----*/
 document.addEventListener("DOMContentLoaded", function() {
-    const registeredUsers = (
+    const registeredUsers = [
         { email: "test@example.com", password: "password123" }
-    );
+    ];
     const loginForm = document.getElementById("login-form");
     if (loginForm) {
         loginForm.addEventListener("submit", function(event) {
