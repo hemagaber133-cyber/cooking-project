@@ -7,6 +7,9 @@
 }
 body{
     background-color: #fff8e7;
+     width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 
@@ -15,10 +18,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    position: absolute; 
+    
     width: 100%;
     z-index: 1000;
     background: transparent;
+    
 }
 
 .logo {
@@ -50,7 +54,7 @@ nav {
 
 .links li a {
     text-decoration: none;
-    color: #e3e3e3;
+    color:#990000 ;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -59,7 +63,7 @@ nav {
 }
 
 .links li a:hover, .links li a.active {
-    color: #990000;
+    color: red;
 }
 
 .nav-icons {
@@ -230,6 +234,11 @@ tr:nth-child(even) {
     text-align: center;
     color: #990000;
 }
+section.search-container .search-bar{    
+        margin: 20px auto;
+        background-color: #fff8e7;
+        text-align: center;
+    }
  h2.recipe-titel{
     font-family: playfair dispiay ,serif;
     color: #990000;
@@ -238,11 +247,11 @@ tr:nth-child(even) {
 }
 div.container{
     max-width: 100%;
-    margin: 20x auto;
+    margin: 20px auto;
     background: #fff8e7;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     flex: 1;
     display: block;
 }
@@ -354,20 +363,23 @@ img.img{
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        width: 100%;
+        max-width: 800px;
         overflow: hidden;
+        flex-direction: column;
+        background-color: #990000;
+        margin: 20px auto;
     }
     figure.fig img{
         max-height: 100%;
         width: auto;
         display: block;
-         border-radius: 10px;
+        border-radius: 10px;
         border-color: #990000;
         transition: scale(1.05);
     }
     figcaption{
         text-align: center;
-        color: #990000;
+        color: #fff8e7;
         font-family: playfair display,serif;
         font-size: 25px;
         font-style: italic;
@@ -376,11 +388,23 @@ img.img{
         flex-direction: column;
         align-items: center;
         gap: 10px;}
-section.search-container{
-        display: flex;
-        align-items: center;
-        margin: 10px;
+section.search-container1{
+        position: relative;
+        margin: 20px auto;
+        background-color: #fff8e7;
+        top: 150px;
+        text-align: center;
     }
+section.search-container1 button{
+     background: #990000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: 0.3s;
+}
   input[type="text"].text{
         width: 250px;
         padding: 12px 20px;
@@ -412,6 +436,8 @@ section.search-container{
         align-items: center;
         min-height: 70vh;
         padding: 20px;
+        flex-direction: column;
+        gap: 20px;
     }
     div.arbus label{
         color: #990000;
@@ -448,7 +474,7 @@ div.arbus input{
         box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.1);
 } 
     div.gogo span{
-         color: #990000;
+        color: #990000;
         font-family: playfair display, serif;
         font-size: 25px;
         font-style: italic;
@@ -460,22 +486,20 @@ div.arbus input{
      }
      /*نور كود صفحة benefits*/
      .web {
-    background-color: #FFF8E7;
-    margin: 0;
+    
     font-family: serif;
-    min-height: 100vh;
+    
     overflow-x: hidden; 
          
 }
 
 .navnour {
-    background-image: url('background.jpg');
-    background-size: cover;
+    background: url('background.jpg');
+   
     background-position: center;
-    width: 100%;
-    min-height: 100vh;
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     position: relative;
     z-index: 1000;
@@ -488,25 +512,8 @@ div.arbus input{
     margin: 30px 0;
 }
 
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-}
 
-li a {
-    display: block;
-    color: #F5F5DC;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
+
 .benefits-container {
     display: flex !important;
     flex-wrap: wrap !important; 
@@ -576,13 +583,13 @@ div.reg-header p{
     font-size: medium;
     padding-top: 20px;
 }
-div.reg-input-group{
+div.reg-input-group ,.reg-form{
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 20vh;
-
+    flex-direction: column;
 }
 div.reg-input-group label{
     color: #990000;
@@ -611,10 +618,69 @@ p.reg-footer-text a{
       text-decoration: none;
         color: #000
 }
-
+/* تعديل صفحة الفديو  */
+.page-title,.video-card{
+    background-color:#990000;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 10px #fff8e7;
+    text-shadow: 2px 4px 8px #990000;
+    color: white;
+}
+/* تعديل صفحة التواصل*/
+.nv{
+     background: url('foodfast.jpg');
+   
+    background-position: bottom;
+}
+.con,.contact-form,.contact-info{
+    background-color: #990000;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    text-shadow: 2px 4px 8px #990000;
+    color: white;
+}
+.contact-form input,.contact-form textarea{
+    border-radius:50px;
+    margin-bottom:30px;
+    padding:10px 30px;
+    content:20px 40px;
+    font-size:18px;
+    background-color:white;
+    border: none;
+    max-height: 45px;
+}
+.lab{
+    background:black;
+    background-clip:text;
+    color:transparent;
+    display:block;
+    margin-bottom:10px;
+    margin-top:10px;
+    font-size:20px;
+    color: white;
+    
+}
+.contact-form button{
+    text-align: center;
+    color:#990000;
+    padding: 5px 15px;
+    background-color: #fff8e7;
+    font-size:17px;
+    transition: all 0.3s ease;
+}
+.contact-form button:hover{
+    transform: scale(1.05);
+}
 
 
       
              
-
 
