@@ -103,7 +103,7 @@ ul li a:hover{
 .active{
     background-color:var(--main-color);
 }
-.search-container {
+.search-container1 {
     width: 100%;
     padding: 20px;
     display: flex;
