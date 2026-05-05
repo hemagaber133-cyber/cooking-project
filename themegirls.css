@@ -277,7 +277,7 @@ ul.Ingrediants,ol.Steps{
 table.nutrition-table{
     margin: 20px auto;
     border-collapse: collapse;
-    width: 60%
+    width: 60%;
     text-align:center;
     border:solid;
 }
