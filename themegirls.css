@@ -420,6 +420,16 @@ section.search-container{
         font-style: italic;
         letter-spacing: 0.5px;
     }
+div.arbus input{
+         width: 250px;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid #990000;
+        border-radius: 25px;
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.1);
+} 
     div.faah label{
          color: #990000;
         font-family: playfair display, serif;
@@ -427,6 +437,16 @@ section.search-container{
         font-style: italic;
         letter-spacing: 0.5px;
     }
+ div.faah input{
+        width: 250px;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: 2px solid #990000;
+        border-radius: 25px;
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.1);
+} 
     div.gogo span{
          color: #990000;
         font-family: playfair display, serif;
