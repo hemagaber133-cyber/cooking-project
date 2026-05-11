@@ -112,9 +112,8 @@ if (form) {
 /*-----Ziad mahmoud Edit-----*/
 
 document.addEventListener("DOMContentLoaded", function() {
-    const registeredUsers = [
-        { email: "test@example.com", password: "password123" }
-    ];
+    const storedData = localStorage.getItem('registeredUser');
+    const user = storedData ? JSON.parse(storedData) : null;
     const loginForm = document.getElementById("login-form");
     if (loginForm) {
         loginForm.addEventListener("submit", function(event) {
@@ -125,14 +124,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("Please fill out this field.");
                 return;
             }
-            const userExists = registeredUsers.some(user => 
-                user.email === emailInput && user.password === passwordInput
-            );
+            const userExists = user && user.email === emailInput && user.password === passwordInput;
             if (!userExists) {
                 alert("Account not found or incorrect password. Please check your details or sign up.");
                 return;
             }
-            alert("Welcome to our restaurant!");
+            alert("Welcome to our COOKING Website!");
             window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
         });
     }
