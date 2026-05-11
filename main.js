@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
             alert("Welcome to our COOKING Website!");
-            window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
+            window.location.href = "index.html";
         });
     }
 });
@@ -173,7 +173,7 @@ if (registerForm) {
 localStorage.setItem('registeredUser', JSON.stringify(user));
         
         setTimeout(function() {
-            window.location.href = "https://hemagaber133-cyber.github.io/cooking-project/index.html";
+            window.location.href = "index.html";
         }, 2000);
         
         // Reset form
